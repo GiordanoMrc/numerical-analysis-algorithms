@@ -1,5 +1,9 @@
+from math import sin, log1p
+
 def f(x):
-  return x;
+  return x**5 + x - 1
+  # return sin(x) - 6*x - 5
+  # return loglp(x) + x**2 - 3
 
 def equal(xk1, xk, a, b, k):
   m = abs(xk1 - xk)
