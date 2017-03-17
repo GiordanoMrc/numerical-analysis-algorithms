@@ -1,4 +1,6 @@
 # Numerical Analysis Algorithms
 
-#### First Exercise: Bisection Method
-Very similar to binary search
+#### Week 1: Bisection Method
+SAUER's Book;   
+Page 30;   
+Exercises 1, 2, 4 e 5  
