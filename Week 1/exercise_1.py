@@ -1,11 +1,12 @@
 from math import cos
 
 def f(x):
-  return x**3 - 9;
+  return x**3 - 9
   #return 3*(x**3) + x**2 - x - 5
   #return cos(x)**2 - x + 6
 
-def equal(xk1, xk, a, b, k):
+def equal(xk1, xk):
+  m = abs(xk1 - xk)
   e = 10**(-6) / 2.0
 
   if m < e:
@@ -15,7 +16,7 @@ def equal(xk1, xk, a, b, k):
 def bisection_method(a, b, ant, k):
   x = (a + b) / 2.0
 
-  if f(x) == 0.0 or (k != 0 and equal(x, ant, a, b, k)):
+  if f(x) == 0.0 or (k != 0 and equal(x, ant)):
     print("The root is ", x)
   elif f(a) * f(x) <= 0:
     bisection_method(a, x, x, k+1)
@@ -23,7 +24,6 @@ def bisection_method(a, b, ant, k):
     bisection_method(x, b, x, k+1)
 
 def main():
-  
   print("Type the interval [a, b] to see if there is a way to apply bisection method.")
   print("Type a:")
   a = float(input())
