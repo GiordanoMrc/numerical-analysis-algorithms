@@ -1,9 +1,5 @@
 def f(x):
   return x;
-  #return x - 5;
-  #return x**2 - 4;
-  #return x**3 - 27;
-  #return 3 * x**5 + 14 * x**4 + 15 * x**3 + 92 * x**2 + 65 * x + 35 * 1
 
 def equal(xk1, xk, a, b, k):
   m = abs(xk1 - xk)
