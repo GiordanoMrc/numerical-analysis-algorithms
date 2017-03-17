@@ -5,9 +5,9 @@ def f(x):
   # return sin(x) - 6*x - 5
   # return loglp(x) + x**2 - 3
 
-def equal(xk1, xk, a, b, k):
+def equal(xk1, xk):
   m = abs(xk1 - xk)
-  e = (b - a) / (2**(k+1))
+  e = 10**(-8) / 2.0
 
   if m < e:
       return True
@@ -16,7 +16,7 @@ def equal(xk1, xk, a, b, k):
 def bisection_method(a, b, ant, k):
   x = (a + b) / 2.0
 
-  if f(x) == 0.0 or (k != 0 and equal(x, ant, a, b, k)):
+  if f(x) == 0.0 or (k != 0 and equal(x, ant)):
     print("The root is ", x)
   elif f(a) * f(x) <= 0:
     bisection_method(a, x, x, k+1)
