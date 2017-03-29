@@ -4,6 +4,8 @@ Use the Method of False Position to find the solution of each equation in Exerci
 
 from math import *
 
+global op
+
 def f(x):
   if op == 'A':
     return (-1)*(x**3) + 2*x + 2
@@ -31,6 +33,7 @@ def method_of_false_position(a, b):
 
 
 def main():
+  global op
   print("Choose the function you want to test! You can choose between A, B and C.")
   op = input()
   print("Type the name of test file [empty for skip]: ")
