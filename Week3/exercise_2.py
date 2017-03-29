@@ -21,10 +21,10 @@ def equal(xk1, xk):
 
 def method_of_false_position(a, b):
   x = (b*f(a) - a*f(b))/(f(a) - f(b))
-
-  if f(x) == 0.0 or equal(x, ant):
+  # ver como usar o equal direito
+  if f(x) == 0.0 or equal(x, b):
     print("The root is {:.8f}".format(x))
-  elif f(a, op) * f(x, op) <= 0:
+  elif f(a) * f(x) <= 0:
     method_of_false_position(a, x)
   else:
     method_of_false_position(x, b)
