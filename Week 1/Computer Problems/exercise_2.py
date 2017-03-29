@@ -29,10 +29,10 @@ def bisection_method(a, b, ant, op, k):
 
 def main():
   print("Choose the function you want to test! You can choose between A, B and C.")
-  op = raw_input()
+  op = input()
 
   print("Type the name of test file [empty for skip]: ")
-  file_name = raw_input()
+  file_name = input()
   try:
     test_file = open(file_name, 'r')
     for line in test_file:
